@@ -1,0 +1,10 @@
+@keyframes flash {
+  from {
+    opacity: 0.1;
+    filter: brightness(50%) blur(5%);
+  }
+  to {
+    opacity: 0.9;
+    filter: brightness(10%) blur(10%);
+  }
+}
