@@ -26,7 +26,7 @@
     background-size: cover;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     margin-bottom: 2rem;
-    filter: brightness(50%);
+    filter: brightness(80%);
     border-radius: 10px;
     transition: all 0.5s;
   }
@@ -43,7 +43,7 @@
     background-image: url(../assets/reactburger.JPG);
   }
   & .projectimage:hover {
-    filter: brightness(90%);
+    filter: brightness(100%);
     transform: scale(1.2);
   }
 }
