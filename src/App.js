@@ -6,6 +6,7 @@ import Services from "./Page/Services/Services";
 import Projects from "./Page/Projects/Projects";
 import Contact from "./Page/Contact/Contact";
 import RocketPreLoad from "./RocketPreload/RocketPreload";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const App = () => {
   const [redirect, setRedirect] = useState(false);
@@ -26,8 +27,10 @@ const App = () => {
       {hidePreLoad ? null : <RocketPreLoad />}
       {redirect ? (
         <div className="container">
-          <Header />
-          <About />
+          <ParallaxProvider>
+            <Header />
+            <About />
+          </ParallaxProvider>
           <Services />
           <Projects />
           <Contact />

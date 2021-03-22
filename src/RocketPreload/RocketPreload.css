@@ -121,3 +121,14 @@
     transform: translateY(-400px) translateX(-250px);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .outerSpace {
+    width: 400px;
+    height: 400px;
+  }
+  .title {
+    top: 70%;
+    width: max-content;
+  }
+}

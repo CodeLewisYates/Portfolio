@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./animation.css";
-import { Parallax } from "react-parallax";
+import { Parallax } from "react-scroll-parallax";
 
 const Header = (props) => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Header = (props) => {
 
   return (
     <React.Fragment>
-      <Parallax strength={-800} blur={{ min: 0, max: 15 }}>
+      <Parallax y={[-50, 50]}>
         <div className="header">
           <h1>
             Hi, I'm <span id="name">Lewis Yates.</span>
