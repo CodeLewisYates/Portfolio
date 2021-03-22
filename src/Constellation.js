@@ -3,7 +3,7 @@ import React from "react";
 const Constellation = (props) => {
   return (
     <svg
-      className="constellation"
+      className={props.classN}
       width="421"
       height="688"
       viewBox="0 0 421 688"

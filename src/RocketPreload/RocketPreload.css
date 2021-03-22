@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.outerSpace {
+  width: 600px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rocketContainer {
+  position: absolute;
+  bottom: 45%;
+  left: 49%;
+  transform: translate(-50%);
+}
+
+.rocket {
+  height: 320px;
+  animation: move 0.2s linear infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+.title {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 3rem;
+  text-align: center;
+}
+
+#circle {
+  animation: move-circle 0.2s linear infinite alternate;
+}
+
+@keyframes move-circle {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes stars {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(1000px);
+  }
+}
+
+.planetstars {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: -10%;
+  left: 0;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.2;
+    filter: brightness(100%);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(200%);
+  }
+}
+
+#planet {
+  transform: translateY(50px);
+}
+
+.smoke {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: 50%;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes liftoff {
+  to {
+    transform: translateY(-400px) translateX(-250px);
+  }
+}
