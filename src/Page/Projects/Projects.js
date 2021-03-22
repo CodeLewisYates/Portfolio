@@ -20,7 +20,10 @@ const Projects = (props) => {
           onClick={() => redirectUser("https://eclaire.netlify.app/")}
           className="projectimage eclaire"
         ></div>
-        <div className="projectimage natours"></div>
+        <div
+          onClick={() => redirectUser("https://lewisnatours.herokuapp.com/")}
+          className="projectimage natours"
+        ></div>
         <div
           onClick={() => redirectUser("https://react-burger-2f085.web.app/")}
           className="projectimage burger"
