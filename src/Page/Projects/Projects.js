@@ -1,5 +1,4 @@
 import React from "react";
-import Constellation from "../../Constellation";
 
 const Projects = (props) => {
   return (

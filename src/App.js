@@ -6,7 +6,6 @@ import Services from "./Page/Services/Services";
 import Projects from "./Page/Projects/Projects";
 import Contact from "./Page/Contact/Contact";
 import RocketPreLoad from "./RocketPreload/RocketPreload";
-import { Transition } from "react-transition-group";
 
 const App = () => {
   const [redirect, setRedirect] = useState(false);

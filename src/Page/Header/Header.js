@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Constellation from "../../Constellation";
 import "./animation.css";
 import { Parallax } from "react-parallax";
 
