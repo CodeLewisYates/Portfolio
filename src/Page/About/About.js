@@ -4,7 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 const About = (props) => {
   return (
     <div className="About">
-      <Parallax y={[30, -30]}>
+      <Parallax y={[10, -10]}>
         <h1 className="aboutHeader">About me</h1>
         <p>
           I am a self taught web developer with a passion for creating both

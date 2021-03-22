@@ -45,5 +45,6 @@
   & .projectimage:hover {
     filter: brightness(100%);
     transform: scale(1.2);
+    cursor: pointer;
   }
 }

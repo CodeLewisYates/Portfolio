@@ -11,21 +11,39 @@ const Header = (props) => {
     });
   }, []);
 
+  const scrollToAbout = () => {
+    window.scrollTo({
+      top: 1000,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToServices = () => {
+    window.scrollTo({
+      top: 1800,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <React.Fragment>
-      <Parallax y={[-50, 50]}>
-        <div className="header">
+      <div className="header">
+        <Parallax y={[-50, 50]}>
           <h1>
             Hi, I'm <span id="name">Lewis Yates.</span>
             <span id="subname">Nice to meet you!</span>
           </h1>
           {/* <Constellation classN="constellation" /> */}
           <div className="headingbtns">
-            <button id="about">About me</button>
-            <button id="services">Services</button>
+            <button onClick={scrollToAbout} id="about">
+              About me
+            </button>
+            <button onClick={scrollToServices} id="services">
+              Services
+            </button>
           </div>
-        </div>
-      </Parallax>
+        </Parallax>
+      </div>
     </React.Fragment>
   );
 };
