@@ -42,6 +42,9 @@
   & .burger {
     background-image: url(../assets/reactburger.JPG);
   }
+  & .forkify {
+    background-image: url(../assets/forkify.jpeg);
+  }
   & .projectimage:hover {
     filter: brightness(100%);
     transform: scale(1.2);
