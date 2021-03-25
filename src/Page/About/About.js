@@ -18,7 +18,7 @@ const About = (props) => {
           in different programming languages and frameworks to be able to
           develop any site or web app you could think of!{" "}
         </p>
-        <form method="get" action="CV.pdf" target="_blank">
+        <form method="get" action="Lewis Yates CV.pdf" target="_blank">
           <button className="CVBtn">Download CV</button>
         </form>
     </div>
