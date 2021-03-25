@@ -1,10 +1,9 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 
 const About = (props) => {
+
   return (
-    <div className="About">
-      <Parallax y={[10, -10]}>
+    <div className="About" id="about">
         <h1 className="aboutHeader">About me</h1>
         <p>
           I am a self taught web developer with a passion for creating both
@@ -19,7 +18,9 @@ const About = (props) => {
           in different programming languages and frameworks to be able to
           develop any site or web app you could think of!{" "}
         </p>
-      </Parallax>
+        <form method="get" action="CV.pdf" target="_blank">
+          <button className="CVBtn">Download CV</button>
+        </form>
     </div>
   );
 };

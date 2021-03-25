@@ -1,16 +1,20 @@
 .Contact {
-  margin-top: 10rem;
+  padding-top: 1rem;
   position: relative;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background-color: #39393a;
+
   & h1 {
-    color: #00adb5;
+    color: #ff8552;
     text-align: center;
     font-size: 3rem;
+    font-weight: 600;
   }
 
   & p {
     text-align: center;
-    color: #f6f6f6;
+    color: #e6e6e6;
     font-size: 1.2rem;
   }
 
@@ -37,21 +41,21 @@
     & input:focus,
     & textarea:focus {
       outline: none;
-      background-color: #363636;
+      background-color: #1d1d1d;
     }
 
     & input,
     & textarea {
       padding: 0.5rem 1rem;
-      background-color: #363636;
+      background-color: #1d1d1d;
       border: none;
       border-radius: 5px;
       height: 50px;
-      color: #eeeeee;
+      color: #ffffff;
       font-size: 1.2rem;
     }
 
-    & #contact-name {
+    & #fromName {
       grid-row: 1 / 2;
       grid-column: 1 / 2;
       width: 90%;
@@ -62,7 +66,7 @@
         width: 100%;
       }
     }
-    & #contact-email {
+    & #fromEmail {
       grid-row: 1 / 2;
       grid-column: 2 / 3;
       width: 100%;
@@ -85,7 +89,7 @@
         grid-row: 3 / 4;
       }
     }
-    & #contact-message {
+    & #msg {
       grid-row: 3 / 4;
       grid-column: 1 / span 2;
       width: 100%;
@@ -102,12 +106,13 @@
       width: max-content;
       margin-top: 2rem;
       border: none;
-      background-color: #eeeeee;
-      color: #222831;
+      background-color: #ff8552;
+      color: #fff;
       padding: 0.5rem 1rem;
       font-size: 1.4rem;
       border-radius: 10px;
       transition: all 0.5s;
+      margin-bottom: 2rem;
 
       @media only screen and (max-width: 700px) {
         grid-row: 5 / 6;

@@ -32,6 +32,8 @@ const Projects = (props) => {
           className="projectimage forkify"
           onClick={() => redirectUser("https://lewisapp.netlify.app/")}
         ></div>
+        <div className="projectimage chat-app" onClick={() => redirectUser("https://chat-app-ly.netlify.app/")}>
+        </div>
       </div>
     </div>
   );

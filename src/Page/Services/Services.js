@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = (props) => {
   return (
-    <div className="Services">
+    <div className="Services" id="services">
       <h1>Services</h1>
       <p>
         Whether you need a <span>landing page</span>, <span>API</span>,{" "}

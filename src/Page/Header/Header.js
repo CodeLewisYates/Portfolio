@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./animation.css";
-import { Parallax } from "react-scroll-parallax";
+import { Link } from "react-scroll";
 
 const Header = (props) => {
   useEffect(() => {
@@ -13,36 +13,41 @@ const Header = (props) => {
 
   const scrollToAbout = () => {
     window.scrollTo({
-      top: 1000,
+      top: 800,
       behavior: "smooth",
     });
   };
 
   const scrollToServices = () => {
     window.scrollTo({
-      top: 1800,
+      top: 1300,
       behavior: "smooth",
     });
   };
 
+  
+
   return (
     <React.Fragment>
       <div className="header">
-        <Parallax y={[-50, 50]}>
           <h1>
             Hi, I'm <span id="name">Lewis Yates.</span>
             <span id="subname">Nice to meet you!</span>
           </h1>
           {/* <Constellation classN="constellation" /> */}
           <div className="headingbtns">
-            <button onClick={scrollToAbout} id="about">
-              About me
-            </button>
-            <button onClick={scrollToServices} id="services">
-              Services
-            </button>
+            <Link to="about" smooth={true}>
+              <button onClick={scrollToAbout}>
+                About me
+              </button>
+            </Link>
+            <Link to="services" spy={true} smooth={true}>
+              <button onClick={scrollToServices}>
+                Services
+              </button>
+            </Link>
           </div>
-        </Parallax>
+            
       </div>
     </React.Fragment>
   );

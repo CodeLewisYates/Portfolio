@@ -1,13 +1,17 @@
 .Projects {
   position: relative;
+  background-color: #39393a;
+  overflow: hidden;
+  padding-bottom: 5rem;
 
   & h1 {
-    color: #eeeeee;
+    color: #ff8552;
     font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
+    font-weight: 600;
   }
 
   & .projectsgrid {
@@ -44,6 +48,9 @@
   }
   & .forkify {
     background-image: url(../assets/forkify.jpeg);
+  }
+  & .chat-app {
+    background-image: url(../assets/chat-app.JPG);
   }
   & .projectimage:hover {
     filter: brightness(100%);
