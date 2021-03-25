@@ -1,39 +1,28 @@
 import React from "react";
 
 const Projects = (props) => {
-  const redirectUser = (url) => {
-    window.location.href = url;
-  };
-
   return (
     <div className="Projects">
       <h1>My Projects</h1>
 
       <div className="projectsgrid">
-        <div
-          onClick={() =>
-            redirectUser("https://palmtreegetaways.herokuapp.com/getaways")
-          }
+        <a href="https://palmtreegetaways.herokuapp.com/getaways" target="_blank" rel="noreferrer"><div
           className="projectimage palmtree"
-        ></div>
-        <div
-          onClick={() => redirectUser("https://eclaire.netlify.app/")}
+        ></div></a>
+        <a href="https://eclaire.netlify.app/" target="_blank" rel="noreferrer"><div
           className="projectimage eclaire"
-        ></div>
-        <div
-          onClick={() => redirectUser("https://lewisnatours.herokuapp.com/")}
+        ></div></a>
+        <a href="https://lewisnatours.herokuapp.com/" target="_blank" rel="noreferrer"><div
           className="projectimage natours"
-        ></div>
-        <div
-          onClick={() => redirectUser("https://react-burger-2f085.web.app/")}
+        ></div></a>
+        <a href="https://react-burger-2f085.web.app/" target="_blank" rel="noreferrer"><div
           className="projectimage burger"
-        ></div>
-        <div
+        ></div></a>
+        <a href="https://lewisapp.netlify.app/" target="_blank" rel="noreferrer"><div
           className="projectimage forkify"
-          onClick={() => redirectUser("https://lewisapp.netlify.app/")}
-        ></div>
-        <div className="projectimage chat-app" onClick={() => redirectUser("https://chat-app-ly.netlify.app/")}>
-        </div>
+        ></div></a>
+        <a href="https://chat-app-ly.netlify.app/" target="_blank" rel="noreferrer"><div className="projectimage chat-app">
+        </div></a>
       </div>
     </div>
   );
