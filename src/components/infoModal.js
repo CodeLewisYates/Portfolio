@@ -2,7 +2,7 @@ import React from "react";
 
 const infoModal = ({ close, visitSite, info }) => {
   return (
-    <div className="infoModal-Container">
+    <div className="infoModal-Container" id="infomodal">
       <h1>{info.title}</h1>
       <p>{info.description}</p>
       <p>{info.built}</p>

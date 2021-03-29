@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const concord = {
   title: "Social Media App",
@@ -63,10 +64,12 @@ const Projects = ({ clickHandler }) => {
       <h1>My Projects</h1>
 
       <div className="projectsgrid">
-        <div
-          onClick={() => clickHandler(concord)}
-          className="projectimage concord"
-        ></div>
+        <Link to="infomodal">
+          <div
+            onClick={() => clickHandler(concord)}
+            className="projectimage concord"
+          ></div>
+        </Link>
         <div
           onClick={() => clickHandler(palmtree)}
           className="projectimage palmtree"

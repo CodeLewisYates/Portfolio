@@ -30,6 +30,15 @@ const App = () => {
     setInfo(info);
   };
 
+  useEffect(() => {
+    const modal = document.querySelector("#infomodal");
+    if (modal)
+      modal.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+  }, [openModal]);
+
   const closeModalHandler = () => {
     setOpenModal(false);
     setInfo(null);
