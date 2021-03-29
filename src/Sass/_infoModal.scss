@@ -1,0 +1,59 @@
+.infoModal-Container {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  text-align: center;
+  background-color: #2f2f30;
+  border: 1px solid coral;
+  animation: animateIn 1s;
+  box-shadow: 0 0 20px 300vh rgba(0, 0, 0, 0.658);
+  border-radius: 5px;
+
+  & p,
+  & h1 {
+    color: whitesmoke;
+  }
+
+  & h1 {
+    margin-top: 2rem;
+    color: coral;
+  }
+
+  & p {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  & button {
+    border: none;
+    outline: none;
+    background-color: coral;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+    margin-top: 50px;
+    transition: all 0.3s;
+  }
+  & button:focus {
+    outline: none;
+  }
+  & button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes animateIn {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

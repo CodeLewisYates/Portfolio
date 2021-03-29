@@ -15,7 +15,7 @@
 
   & p {
     color: #e6e6e6;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     opacity: 0.9;
     text-align: center;
     margin-bottom: 3rem;
@@ -31,55 +31,63 @@
     }
   }
 
-  & .serviceBox {
-    margin-bottom: 1rem;
-    border-radius: 10px;
-
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-
-    @media only screen and (max-width: 1000px) {
-      width: 60%;
-    }
-    @media only screen and (max-width: 600px) {
-      width: 80%;
-    }
-
-    & .service {
-      background-color: #1d1d1d;
-      border-radius: 10px;
-      transition: all 0.5s;
-      margin-bottom: 1rem;
-    }
-
-    & h2 {
-      color: #ff8552;
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 500;
-      padding: 0.5rem;
-      transition: all 0.5s;
-    }
-
-    & p {
-      font-size: 1rem;
-      padding: 1rem 2rem;
-      color: #eeeeee;
-    }
+  & a {
+    text-align: center;
+    //text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    color: coral;
   }
 
-  & .service:hover {
-    transform: scale(1.05);
-    box-shadow: inset 0 0 60px rgba(245, 245, 245, 0.685),
-      inset 20px 0 80px rgba(255, 0, 255, 0.685), inset -20px 0 80px #0ff,
-      inset 20px 0 300px rgba(255, 0, 255, 0.685),
-      inset -20px 0 300px rgba(0, 255, 255, 0.562),
-      0 0 50px rgba(255, 255, 255, 0.678), -10px 0 80px rgba(255, 0, 255, 0.637),
-      10px 0 80px rgba(0, 255, 255, 0.63);
-    & h2 {
-      color: whitesmoke;
-    }
-  }
+  // & .serviceBox {
+  //   margin-bottom: 1rem;
+  //   border-radius: 10px;
+
+  //   width: 40%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin: 0 auto;
+
+  //   @media only screen and (max-width: 1000px) {
+  //     width: 60%;
+  //   }
+  //   @media only screen and (max-width: 600px) {
+  //     width: 80%;
+  //   }
+
+  //   & .service {
+  //     background-color: #1d1d1d;
+  //     border-radius: 10px;
+  //     transition: all 0.5s;
+  //     margin-bottom: 1rem;
+  //   }
+
+  //   & h2 {
+  //     color: #ff8552;
+  //     text-align: center;
+  //     font-size: 1.5rem;
+  //     font-weight: 500;
+  //     padding: 0.5rem;
+  //     transition: all 0.5s;
+  //   }
+
+  //   & p {
+  //     font-size: 1rem;
+  //     padding: 1rem 2rem;
+  //     color: #eeeeee;
+  //   }
+  // }
+
+  // & .service:hover {
+  //   transform: scale(1.05);
+  //   box-shadow: inset 0 0 60px rgba(245, 245, 245, 0.685),
+  //     inset 20px 0 80px rgba(255, 0, 255, 0.685), inset -20px 0 80px #0ff,
+  //     inset 20px 0 300px rgba(255, 0, 255, 0.685),
+  //     inset -20px 0 300px rgba(0, 255, 255, 0.562),
+  //     0 0 50px rgba(255, 255, 255, 0.678), -10px 0 80px rgba(255, 0, 255, 0.637),
+  //     10px 0 80px rgba(0, 255, 255, 0.63);
+  //   & h2 {
+  //     color: whitesmoke;
+  //   }
+  // }
 }

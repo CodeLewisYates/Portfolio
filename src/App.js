@@ -2,15 +2,18 @@ import "./Sass/main.scss";
 import React, { useState, useEffect } from "react";
 import Header from "./Page/Header/Header";
 import About from "./Page/About/About";
-import Services from "./Page/Services/Services";
+import Github from "./Page/Github/Github";
 import Projects from "./Page/Projects/Projects";
 import Contact from "./Page/Contact/Contact";
 import RocketPreLoad from "./RocketPreload/RocketPreload";
-import { ParallaxProvider } from "react-scroll-parallax";
+import InfoModal from "./components/infoModal";
 
 const App = () => {
   const [redirect, setRedirect] = useState(false);
   const [hidePreLoad, setHidePreLoad] = useState(false);
+
+  const [openModal, setOpenModal] = useState(false);
+  const [info, setInfo] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,17 +25,37 @@ const App = () => {
     }, 6500);
   }, []);
 
+  const projectClickHandler = (info) => {
+    setOpenModal(true);
+    setInfo(info);
+  };
+
+  const closeModalHandler = () => {
+    setOpenModal(false);
+    setInfo(null);
+  };
+
+  const visitHandler = () => {
+    setOpenModal(false);
+    setInfo(null);
+  };
+
   return (
     <React.Fragment>
       {hidePreLoad ? null : <RocketPreLoad />}
       {redirect ? (
         <div className="container">
-          <ParallaxProvider>
-            <Header />
-            <About />
-          </ParallaxProvider>
-          <Services />
-          <Projects />
+          <Header />
+          <About />
+          {openModal ? (
+            <InfoModal
+              info={info}
+              close={closeModalHandler}
+              visitSite={visitHandler}
+            />
+          ) : null}
+          <Projects clickHandler={(info) => projectClickHandler(info)} />
+          <Github />
           <Contact />
         </div>
       ) : null}
