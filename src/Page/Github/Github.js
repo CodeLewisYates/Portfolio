@@ -8,7 +8,11 @@ const Github = (props) => {
         Feel free to browse my github respositories and view my code from my
         projects!
       </p>
-      <a href="https://github.com/CodeLewisYates" target="_blank">
+      <a
+        href="https://github.com/CodeLewisYates"
+        target="_blank"
+        rel="noreferrer"
+      >
         Visit my github
       </a>
     </div>
