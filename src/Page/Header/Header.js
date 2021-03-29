@@ -11,43 +11,22 @@ const Header = (props) => {
     });
   }, []);
 
-  const scrollToAbout = () => {
-    window.scrollTo({
-      top: 800,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollToServices = () => {
-    window.scrollTo({
-      top: 1300,
-      behavior: "smooth",
-    });
-  };
-
-  
-
   return (
     <React.Fragment>
       <div className="header">
-          <h1>
-            Hi, I'm <span id="name">Lewis Yates.</span>
-            <span id="subname">Nice to meet you!</span>
-          </h1>
-          {/* <Constellation classN="constellation" /> */}
-          <div className="headingbtns">
-            <Link to="about" smooth={true}>
-              <button onClick={scrollToAbout}>
-                About me
-              </button>
-            </Link>
-            <Link to="services" spy={true} smooth={true}>
-              <button onClick={scrollToServices}>
-                Services
-              </button>
-            </Link>
-          </div>
-            
+        <h1>
+          Hi, I'm <span id="name">Lewis Yates.</span>
+          <span id="subname">Nice to meet you!</span>
+        </h1>
+        {/* <Constellation classN="constellation" /> */}
+        <div className="headingbtns">
+          <Link to="about" smooth={true}>
+            <button>About me</button>
+          </Link>
+          <Link to="projects" spy={true} smooth={true}>
+            <button>Projects</button>
+          </Link>
+        </div>
       </div>
     </React.Fragment>
   );

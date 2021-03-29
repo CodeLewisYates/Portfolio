@@ -59,7 +59,7 @@ const eclaire = {
 
 const Projects = ({ clickHandler }) => {
   return (
-    <div className="Projects">
+    <div className="Projects" id="projects">
       <h1>My Projects</h1>
 
       <div className="projectsgrid">
